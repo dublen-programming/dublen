@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DUBLEN - شركة متخصصة في تطوير البرمجيات والحلول التقنية الاحترافية">
+    <meta name="keywords" content="تطوير مواقع, تطبيقات موبايل, أنظمة إدارية, كاشير, عيادات, صالونات">
+    <title>DUBLEN - حلول برمجية احترافية</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- Google Fonts - Arabic & English Support -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Inter:wght@300;400;600;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <img src="logo.png" alt="DUBLEN" class="logo-img">
+                <span class="logo-text">DUBLEN</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-ar="الرئيسية" data-en="Home">الرئيسية</a></li>
+                <li><a href="#services" class="nav-link" data-ar="الخدمات" data-en="Services">الخدمات</a></li>
+                <li><a href="#about" class="nav-link" data-ar="من نحن" data-en="About">من نحن</a></li>
+                <li><a href="#contact" class="nav-link" data-ar="تواصل معنا" data-en="Contact">تواصل معنا</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-switch" id="langSwitch" onclick="toggleLanguage()">
+                    <i class="fas fa-globe"></i>
+                    <span id="langText">English</span>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title" data-ar="DUBLEN" data-en="DUBLEN">DUBLEN</h1>
+                <p class="hero-subtitle" data-ar="شريكك في التحول الرقمي"
+                    data-en="Your Partner in Digital Transformation">شريكك في التحول الرقمي</p>
+                <p class="hero-description"
+                    data-ar="نقدم حلول برمجية احترافية ومبتكرة لتطوير أعمالك وتحقيق أهدافك الرقمية"
+                    data-en="We provide professional and innovative software solutions to develop your business and achieve your digital goals">
+                    نقدم حلول برمجية احترافية ومبتكرة لتطوير أعمالك وتحقيق أهدافك الرقمية</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/201017323187?text=مرحباً%20DUBLEN،%20أنا%20مهتم%20بخدماتكم"
+                        class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <span data-ar="تواصل معنا الآن" data-en="Contact Us Now">تواصل معنا الآن</span>
+                    </a>
+                    <a href="#services" class="btn btn-secondary">
+                        <span data-ar="استكشف خدماتنا" data-en="Explore Our Services">استكشف خدماتنا</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="خدماتنا" data-en="Our Services">خدماتنا</h2>
+                <p class="section-subtitle" data-ar="حلول برمجية متكاملة لجميع احتياجاتك"
+                    data-en="Complete software solutions for all your needs">حلول برمجية متكاملة لجميع احتياجاتك</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service Card 1: Websites -->
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="service-title" data-ar="مواقع إلكترونية احترافية" data-en="Professional Websites">مواقع
+                        إلكترونية احترافية</h3>
+                    <p class="service-description"
+                        data-ar="تصميم وتطوير مواقع إلكترونية عصرية وسريعة تعكس هوية علامتك التجارية"
+                        data-en="Design and develop modern, fast websites that reflect your brand identity">تصميم وتطوير
+                        مواقع إلكترونية عصرية وسريعة تعكس هوية علامتك التجارية</p>
+                    <div class="pricing">
+                        <div class="price-option">
+                            <span class="price-label" data-ar="اشتراك شهري" data-en="Monthly Subscription">اشتراك
+                                شهري</span>
+                            <span class="price-value" data-egp="100 ج.م" data-usd="$5">100 ج.م</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="price-label" data-ar="شراء كامل" data-en="Full Purchase">شراء كامل</span>
+                            <span class="price-value" data-egp="1,399 ج.م" data-usd="$50">1,399 ج.م</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 2: Admin System -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="service-title" data-ar="نظام إداري للمشاريع الصغيرة"
+                        data-en="Management System for Small Projects">نظام إداري للمشاريع الصغيرة</h3>
+                    <p class="service-description"
+                        data-ar="لوحة تحكم للمدير • شاشة خاصة بالكاشير • شاشة خاصة بالمندوب (الطيار) • شاشة المنيو (يتم إرسالها للعميل لطلب الأوردر)"
+                        data-en="Manager dashboard • Cashier screen • Delivery driver screen • Menu screen (sent to customer for ordering)">
+                        لوحة تحكم للمدير • شاشة خاصة بالكاشير • شاشة خاصة بالمندوب (الطيار) • شاشة المنيو (يتم إرسالها
+                        للعميل لطلب الأوردر)</p>
+                    <div class="pricing">
+                        <div class="price-option">
+                            <span class="price-label" data-ar="اشتراك شهري" data-en="Monthly Subscription">اشتراك
+                                شهري</span>
+                            <span class="price-value" data-egp="200 ج.م" data-usd="$7">200 ج.م</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="price-label" data-ar="شراء كامل" data-en="Full Purchase">شراء كامل</span>
+                            <span class="price-value" data-egp="4,500 ج.م" data-usd="$115">4,500 ج.م</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 3: POS System -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-cash-register"></i>
+                    </div>
+                    <h3 class="service-title" data-ar="نظام كاشير للمطاعم والكافيهات"
+                        data-en="POS System for Restaurants & Cafés">نظام كاشير للمطاعم والكافيهات</h3>
+                    <p class="service-description" data-ar="حلول نقاط بيع ذكية لإدارة المبيعات والمخزون بسهولة وفعالية"
+                        data-en="Smart POS solutions to manage sales and inventory easily and effectively">حلول نقاط بيع
+                        ذكية لإدارة المبيعات والمخزون بسهولة وفعالية</p>
+                    <div class="pricing">
+                        <div class="price-option">
+                            <span class="price-label" data-ar="اشتراك شهري" data-en="Monthly Subscription">اشتراك
+                                شهري</span>
+                            <span class="price-value" data-egp="200 ج.م" data-usd="$7">200 ج.م</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="price-label" data-ar="شراء كامل" data-en="Full Purchase">شراء كامل</span>
+                            <span class="price-value" data-egp="4,500 ج.م" data-usd="$115">4,500 ج.م</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 4: Medical Clinic -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3 class="service-title" data-ar="نظام إدارة العيادات الطبية"
+                        data-en="Medical Clinic Management System">نظام إدارة العيادات الطبية</h3>
+                    <p class="service-description" data-ar="إدارة شاملة للمرضى والمواعيد والسجلات الطبية بأمان عالي"
+                        data-en="Comprehensive management of patients, appointments, and medical records with high security">
+                        إدارة شاملة للمرضى والمواعيد والسجلات الطبية بأمان عالي</p>
+                    <div class="pricing">
+                        <div class="price-option">
+                            <span class="price-label" data-ar="اشتراك شهري" data-en="Monthly Subscription">اشتراك
+                                شهري</span>
+                            <span class="price-value" data-egp="250 ج.م" data-usd="$10">250 ج.م</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="price-label" data-ar="شراء كامل" data-en="Full Purchase">شراء كامل</span>
+                            <span class="price-value" data-egp="4,999 ج.م" data-usd="$119">4,999 ج.م</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 5: Barber Shop -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3 class="service-title" data-ar="نظام إدارة صالونات الحلاقة"
+                        data-en="Barber Shop Management System">نظام إدارة صالونات الحلاقة</h3>
+                    <p class="service-description" data-ar="حجز المواعيد وإدارة الموظفين والعملاء في نظام واحد متكامل"
+                        data-en="Appointment booking, staff and customer management in one integrated system">حجز
+                        المواعيد وإدارة الموظفين والعملاء في نظام واحد متكامل</p>
+                    <div class="pricing">
+                        <div class="price-option">
+                            <span class="price-label" data-ar="اشتراك شهري" data-en="Monthly Subscription">اشتراك
+                                شهري</span>
+                            <span class="price-value" data-egp="250 ج.م" data-usd="$10">250 ج.م</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="price-label" data-ar="شراء كامل" data-en="Full Purchase">شراء كامل</span>
+                            <span class="price-value" data-egp="4,999 ج.م" data-usd="$119">4,999 ج.م</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 6: E-commerce App -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="service-title" data-ar="تطبيق متجر إلكتروني" data-en="E-commerce App Development">تطبيق
+                        متجر إلكتروني</h3>
+                    <p class="service-description" data-ar="تطبيقات تجارة إلكترونية متطورة لنظامي iOS و Android"
+                        data-en="Advanced e-commerce applications for iOS and Android systems">تطبيقات تجارة إلكترونية
+                        متطورة لنظامي iOS و Android</p>
+                    <div class="pricing">
+                        <div class="price-option">
+                            <span class="price-label" data-ar="اشتراك شهري" data-en="Monthly Subscription">اشتراك
+                                شهري</span>
+                            <span class="price-value" data-egp="49 ج.م" data-usd="$2">49 ج.م</span>
+                        </div>
+                        <div class="price-option">
+                            <span class="price-label" data-ar="شراء كامل" data-en="Full Purchase">شراء كامل</span>
+                            <span class="price-value" data-egp="999 ج.م" data-usd="$25">999 ج.م</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 7: Google Play -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fab fa-google-play"></i>
+                    </div>
+                    <h3 class="service-title" data-ar="رفع التطبيقات على Google Play"
+                        data-en="Google Play Store Publishing">رفع التطبيقات على Google Play</h3>
+                    <p class="service-description" data-ar="نساعدك في نشر تطبيقك على متجر جوجل بلاي باحترافية"
+                        data-en="We help you publish your app on Google Play Store professionally">نساعدك في نشر تطبيقك
+                        على متجر جوجل بلاي باحترافية</p>
+                    <div class="pricing">
+                        <div class="price-option single-price">
+                            <span class="price-label" data-ar="اشتراك سنوي" data-en="Annual Subscription">اشتراك
+                                سنوي</span>
+                            <span class="price-value" data-egp="500 ج.م" data-usd="$19">500 ج.م</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service Card 8: App Store -->
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-icon">
+                        <i class="fab fa-app-store-ios"></i>
+                    </div>
+                    <h3 class="service-title" data-ar="رفع التطبيقات على App Store" data-en="App Store Publishing">رفع
+                        التطبيقات على App Store</h3>
+                    <p class="service-description" data-ar="نشر تطبيقاتك على متجر آبل ستور وفق معايير Apple"
+                        data-en="Publish your apps on Apple App Store according to Apple standards">نشر تطبيقاتك على
+                        متجر آبل ستور وفق معايير Apple</p>
+                    <div class="pricing">
+                        <div class="price-option single-price">
+                            <span class="price-label" data-ar="اشتراك سنوي" data-en="Annual Subscription">اشتراك
+                                سنوي</span>
+                            <span class="price-value" data-egp="2,000 ج.م" data-usd="$25">2,000 ج.م</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title" data-ar="لماذا DUBLEN؟" data-en="Why DUBLEN?">لماذا DUBLEN؟</h2>
+                    <p class="about-description"
+                        data-ar="نحن فريق من المطورين المحترفين المتخصصين في تقديم حلول برمجية مبتكرة تساعد الشركات والأفراد على تحقيق أهدافهم الرقمية. نؤمن بأن التكنولوجيا يجب أن تكون في خدمة الإنسان، لذلك نركز على تطوير أنظمة سهلة الاستخدام وفعالة."
+                        data-en="We are a team of professional developers specialized in providing innovative software solutions that help companies and individuals achieve their digital goals. We believe that technology should serve people, so we focus on developing user-friendly and effective systems.">
+                        نحن فريق من المطورين المحترفين المتخصصين في تقديم حلول برمجية مبتكرة تساعد الشركات والأفراد على
+                        تحقيق أهدافهم الرقمية. نؤمن بأن التكنولوجيا يجب أن تكون في خدمة الإنسان، لذلك نركز على تطوير
+                        أنظمة سهلة الاستخدام وفعالة.</p>
+
+                    <div class="features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-ar="خبرة واسعة في التطوير" data-en="Extensive development experience">خبرة واسعة
+                                في التطوير</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-ar="دعم فني مستمر" data-en="Continuous technical support">دعم فني مستمر</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-ar="أسعار تنافسية" data-en="Competitive prices">أسعار تنافسية</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span data-ar="تسليم في الوقت المحدد" data-en="On-time delivery">تسليم في الوقت
+                                المحدد</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title" data-ar="تواصل معنا" data-en="Contact Us">تواصل معنا</h2>
+                <p class="section-subtitle" data-ar="نحن هنا لمساعدتك في تحقيق رؤيتك الرقمية"
+                    data-en="We are here to help you achieve your digital vision">نحن هنا لمساعدتك في تحقيق رؤيتك
+                    الرقمية</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3 data-ar="اتصل بنا" data-en="Call Us">اتصل بنا</h3>
+                            <p dir="ltr">01017323187</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div>
+                            <h3 data-ar="واتساب" data-en="WhatsApp">واتساب</h3>
+                            <p dir="ltr">01017323187</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/201017323187?text=مرحباً%20DUBLEN،%20أنا%20مهتم%20بخدماتكم"
+                    class="btn btn-primary btn-large" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                    <span data-ar="ابدأ المحادثة الآن" data-en="Start Chat Now">ابدأ المحادثة الآن</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="DUBLEN" class="footer-logo-img">
+                    <span class="logo-text">DUBLEN</span>
+                    <p data-ar="حلول برمجية احترافية" data-en="Professional Software Solutions">حلول برمجية احترافية</p>
+                </div>
+                <div class="footer-copyright">
+                    <p data-ar="© 2026 DUBLEN. جميع الحقوق محفوظة" data-en="© 2026 DUBLEN. All rights reserved">© 2026
+                        DUBLEN. جميع الحقوق محفوظة</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/201017323187?text=مرحباً%20DUBLEN،%20أنا%20مهتم%20بخدماتكم" class="whatsapp-float"
+        target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
